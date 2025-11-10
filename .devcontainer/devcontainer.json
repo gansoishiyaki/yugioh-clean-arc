@@ -14,6 +14,9 @@
     }
   },
   "postCreateCommand": "npm install",
+  "containerEnv": {
+    "CHOKIDAR_USEPOLLING": "true"
+  },
   "portsAttributes": {
     "5173": {
       "label": "Vite Dev Server",
@@ -22,4 +25,3 @@
   },
   "forwardPorts": [5173]
 }
-

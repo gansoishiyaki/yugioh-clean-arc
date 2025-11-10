@@ -21,10 +21,19 @@
 
 ワンクリックで起動: https://codespaces.new/gansoishiyaki/yugioh-clean-arc
 
-## ホットリロード（ローカル）
+## ホットリロード（HMR）
 
-- Vite + React の Fast Refresh により、保存時に自動でUIが更新されます（特別な設定は不要）。
-- `npm run dev` を起動した状態で `src/presentation` 配下のファイルを編集・保存すると、ブラウザが即時反映します。
+- 共通: Vite + React の Fast Refresh により、保存時に自動でUIが更新されます。
+
+- ローカル:
+  - 追加設定不要。`npm run dev` 起動中に `src/presentation` 配下を編集すると即時反映します。
+
+- Codespaces:
+  - 設定済み（変更不要）。以下によりHMRのWebSocketと監視を安定化しています。
+    - `vite.config.ts` の `server.hmr.clientPort = 443`
+    - `vite.config.ts` の `server.watch.usePolling = true`
+    - `.devcontainer/devcontainer.json` の `containerEnv.CHOKIDAR_USEPOLLING = true`
+  - `npm run dev` を実行し、フォワードされたPort 5173を開くと保存時に即時反映します。
 
 ## ローカル実行
 

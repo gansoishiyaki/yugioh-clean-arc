@@ -8,5 +8,13 @@ export default defineConfig({
     port: 5173,
     host: true,
     strictPort: true,
+    // Codespaces などクラウドIDEでのHMR安定化
+    hmr: {
+      clientPort: 443,
+    },
+    // リモートFSでのファイル監視安定化
+    watch: {
+      usePolling: true,
+    },
   },
 })
