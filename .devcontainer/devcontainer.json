@@ -1,0 +1,25 @@
+{
+  "name": "yugioh-clean-arch",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "forwardPorts": [5173]
+}
+

@@ -1,0 +1,8 @@
+[
+  { "name": "青眼の白龍", "attack": 3000, "defense": 2500, "attribute": "光", "level": 8 },
+  { "name": "ブラック・マジシャン", "attack": 2500, "defense": 2100, "attribute": "闇", "level": 7 },
+  { "name": "真紅眼の黒竜", "attack": 2400, "defense": 2000, "attribute": "闇", "level": 7 },
+  { "name": "死者蘇生", "attack": 0, "defense": 0, "attribute": "魔法", "level": 0 },
+  { "name": "ハネハネ", "attack": 450, "defense": 500, "attribute": "地", "level": 2 },
+  { "name": "仮面魔獣デス・ガーディウス", "attack": 3300, "defense": 2500, "attribute": "闇", "level": 8 }
+]
